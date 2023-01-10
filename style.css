@@ -139,32 +139,61 @@ svg{
 .ronaldo-pictures{
     position: relative;
     margin-bottom: 4rem;
+    margin-top: 3rem;
+}
+.ronaldo-picture{
+    display: flex;
+    border-radius: 2rem;
 }
 .ronaldo-pictures img{
-    width: 10rem;
-    height: 8rem;
-
+    width: 9rem;
+    height: 10rem;
+}
+.ronaldo-picture .ronaldo-pic1{
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+.ronaldo-picture .ronaldo-pic4{
+    width:13rem ;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
 }
 .ronaldo-pictures .more-images{
     position: absolute;
     background-color: rgba(7, 7, 7,1);
     color: white;
-    top: 70%;
-    left: 45%;
+    bottom: 0;
+    right: 10%;
     height: 2rem;
-    padding: 1rem;
+    padding: 1.3rem;
     opacity: 0.8;
+    border-bottom-right-radius: 0.5rem;
     
 }
 .top-stories1{
     font-size: 1.5rem;
+    border-bottom: 1px solid rgb(227, 227, 227);
+    padding: 1rem 1rem 1rem 0;
     
 }
+.ronaldo-blog-stories{
+    padding: 1rem 1rem 1rem 0;
+}
+.blog-part1{
+    border-right: 1px solid rgb(208, 207, 207);
+    padding: 0 1rem 0 0;
+}
+.sport-bible{
+    border-bottom: 1px solid rgb(221, 216, 216);
+    padding:1rem 1rem 1rem 0;
+}
 .ronaldo-blog-stories .sport-bible img{
-    margin-top: 2rem;
     width: 20rem;
     height: 12rem;
     border-radius: 0.5rem;
+}
+.sport-bible h1,p,span{
+    margin-bottom: 0.5rem;
 }
 .sport-bible h1{
     color: rgb(32, 121, 32);
@@ -175,18 +204,39 @@ svg{
 .sport-bible span{
     color: gray;
 }
+.daily-blog{
+    display: flex;
+    padding: 1rem 1rem 1rem 0;
+    border-bottom: 1px solid rgb(221, 216, 216);
+}
+.daily-blog h3,p,span{
+    margin-bottom: 0.5rem;
+}
 .daily-blog h3{
     font-weight: 400;
     background: red;
-    font-size: 1rem;
+    font-size: 0.6rem;
     color: white;
-    width: 6rem;
+    width: 4rem;
+}
+.blog-part2{
+    padding: 0 1rem 0 1rem;
+}
+.blog-part2 div{
+    margin-bottom:1.3rem ;
+}
+.goal-blog{
+    display: flex;
+    border-bottom: 1px solid rgb(204, 201, 201);
+}
+.goal-blog h3,p,span{
+    margin-bottom: 0.5rem;
 }
 .goal-blog h3{
     background: black;
     color: white;
     height: 1rem;
-    width: 12rem;
+    width: 10rem;
     font-size: 0.5rem;
 }
 .ronaldo-blog-stories{
@@ -201,24 +251,49 @@ svg{
 }
 .ronaldo-blog-stories img{
     height: 5rem;
-    width: 6rem;
+    width: 5rem;
     border-radius: 0.5rem;
 }
 .ronaldo-blog-stories .sahara-blog {
-    color: rgb(231, 38, 38);
+    display: flex;
+    border-bottom:1px solid rgb(215, 215, 215);
+}
+.ronaldo-blog-stories .sahara-blog h5,p,span{
+    margin-bottom: 0.5rem;
+}
+.ronaldo-blog-stories .sahara-blog h5{
+    color: rgb(223, 11, 11);
+}
+.Marca-blog{
+    display: flex;
+    border-bottom: 1px solid rgb(221, 216, 216);
+}
+.Marca-blog h1,p,span{
+    margin-bottom: 0.5rem;
+
 }
 .ronaldo-blog-stories .Marca-blog h1{
     color: white;
     background: red;
-    width: 5rem;
+    width: 3rem;
+    font-size: 0.6rem;
+}
+.more-post{
+    width: 15rem;
+    align-content: center;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    background: rgb(227, 227, 227);
+    border: 0;
+
 }
 .ronaldo-wikipedia{
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 .ronaldo-wiki-paragraph2{
     color: rgb(17, 17, 164);
     font-size: 1.5rem;
-    padding: 0.8rem 0.8rem 0.8rem 0;
+    /* padding: 0.3rem 0.3rem 0.3rem 0; */
 }
 .ronaldo-wiki-paragraph2 svg{
     color: green;
@@ -379,6 +454,14 @@ details span{
     padding-bottom:1rem ;
     font-size: 1.5rem;
 }
+.about-article{
+    width: 40%; 
+    padding: 0 6rem 3rem 3rem;
+    margin-top: 2.2rem;
+    border-left: 1px solid rgb(194, 194, 194);
+    height: 110rem;
+    margin-left: 1rem;
+}
 .about-article-button button{
     border-radius: 2rem;
     background: white;
@@ -395,20 +478,28 @@ details span{
 .Christianos-biography p{
     padding-bottom: 1rem;
 }
+.Christianos-biography p a{
+    text-decoration: none;
+}
 .biography-button{
     display: flex;
     justify-content: space-between;
-}
-.biography-button{
-    padding: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgb(207, 206, 206);
 }
 .biography-button button{
-    padding: 0.5rem;
+    padding:0.5rem;
+    background: white;
     border-radius: 2rem;
     border: 1px solid rgb(205, 200, 200);
 }
 .biography-button button svg{
     color: blue;
+}
+.biography-button span{
+    color: gray;
+    margin-top: 0.8rem;
 }
 .profiles ul{
     display: flex;
@@ -453,14 +544,17 @@ details span{
     justify-content: space-between;
 }
 .stats table{
-    padding: 1rem 1rem 1rem 0;
+    padding: 1rem 1rem 1rem 0; 
     border-collapse: separate;
-    border-spacing: 1rem 2rem;
-    border-bottom: 1px solid rgb(200, 197, 197);
+    border-spacing: 1rem 2rem; 
+    /* border-bottom: 1px solid rgb(200, 197, 197); */
 }
 .stats table th{
     padding-right: 2rem;
 }
+/* .stats table,tr,th,td{
+    border-bottom: 1px solid gray;
+} */
 .other-searches ul{
     display: flex;
     width: 22rem;
@@ -483,4 +577,36 @@ details span{
     background-color: rgb(235, 233, 233);
     border: 0;
     margin-top: 0.5rem;
+}
+footer{
+    background: whitesmoke;
+    padding: 2rem;
+}
+.footer-location{
+    display: flex;
+    margin-left: 10rem;
+    border-bottom: 1px solid rgb(189, 188, 188);
+    width: 100%;
+}
+.footer-location span{
+    margin-right: 2rem ;
+    border-right: 1px solid gray;
+    padding: 0 1rem 1rem 0;
+}
+.footer-location p a{
+    color: rgb(10, 10, 126);
+    text-decoration: none;
+
+}
+footer ul{
+    display: flex;
+    margin-left: 8rem;
+    margin-top: 1rem;
+
+}
+footer ul li{
+    list-style-type: none;
+    padding-left: 2rem;
+    color: gray;
+
 }
