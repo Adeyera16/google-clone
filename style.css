@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    overflow-x: hidden;
+}
 header{
     border-bottom: 1px solid rgb(210, 210, 210);
     padding-bottom: 1.5rem;
@@ -54,12 +57,30 @@ svg{
 
 }
 .nav-button button svg{
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.3rem;
+    height: 1.4rem;
 }
 .nav-button button img{
     width: 1.5rem;
     height: 1.5rem;
+}
+.nav-button .button-images .google-mic{
+    width: 1rem;
+    height: 1.3rem;
+}
+.nav-setting img,svg{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1rem;
+}
+.nav-setting p{
+    background: rgb(30, 124, 69);
+    width: 2rem;
+    color: white;
+    height: 2rem;
+    padding: 0.5rem;
+    border-radius: 100%;
+    margin-top: 0;
 }
 /* .nav-button .button-images{
     margin-left: 1rem;
@@ -82,17 +103,23 @@ svg{
     margin-right: 10px;
     border-radius: 2rem;
     /* background: aliceblue; */
-    padding: 10px;
+    padding: 0.5rem;
     border: 1px solid rgb(226, 224, 224);
 }
 .google-list ul li svg{
     color: blue;
+    margin-right: 0.5rem;
+    margin-top: 0.2rem;
 }
 .google-list .filters{
     display: flex;
+    margin-right: 1.5rem;
 }
 .google-list .filters .all-filters{
     margin-right: 10px;
+    border-right: 1px solid gray;
+    height: 1.5rem;
+    padding: 0 1rem 0 0;
 }
 .about-section .result-p{
     margin: 1rem 0 1rem 0;
@@ -122,10 +149,15 @@ svg{
     display: flex;
 }
 .Christiano-Portugese-Footballer  svg{
-    margin-top: 0.7rem; 
+    margin-top: 0.7rem;
+    height: 1rem;
 }
 .about-section-button{
     margin-left: 3rem;
+}
+.about-section-button .overview{
+    width: 6rem;
+    border: 1px solid rgb(152, 150, 150);
 }
 .about-section-button button{
     padding: 1rem;
@@ -154,7 +186,7 @@ svg{
     border-bottom-left-radius: 0.5rem;
 }
 .ronaldo-picture .ronaldo-pic4{
-    width:13rem ;
+    width:14rem ;
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
 }
@@ -163,7 +195,7 @@ svg{
     background-color: rgba(7, 7, 7,1);
     color: white;
     bottom: 0;
-    right: 10%;
+    right: 5.5%;
     height: 2rem;
     padding: 1.3rem;
     opacity: 0.8;
@@ -279,13 +311,20 @@ svg{
     font-size: 0.6rem;
 }
 .more-post{
+    display: flex;
+    justify-content: center;
     width: 15rem;
+    padding-top: 0.5rem;
     align-content: center;
     padding: 0.5rem;
     border-radius: 2rem;
     background: rgb(227, 227, 227);
     border: 0;
-
+    font-size: 1rem;
+}
+.more-post svg{
+    width: 1rem;
+    margin-left: 1rem;
 }
 .ronaldo-wikipedia{
     margin-top: 2rem;
@@ -375,6 +414,8 @@ details span{
     font-size: 0.8rem;
 }
 .Videos button{
+    display: flex;
+    justify-content: center;
     width: 15rem;
     background: rgb(215, 212, 212);
     border-radius: 1rem;
@@ -383,6 +424,10 @@ details span{
     border: 0;
     margin-top:1rem ;
     align-content: center;
+}
+.Videos button svg{
+    height: 1.3rem;
+    margin-left: 1rem;
 }
 .links{
     margin-top: 2rem;
@@ -403,12 +448,15 @@ details span{
     padding: 0 0 0.5rem 0;
     display: flex;
 }
+.links svg{
+    height: 1rem;
+}
 .links a svg{
     color: rgb(101, 189, 101);
 }
 .buttons{
     display: flex;
-    padding: 10px;
+    padding: 1rem;
 }
 .search-button p{
     margin-top: 2rem;
@@ -463,9 +511,13 @@ details span{
     margin-left: 1rem;
 }
 .about-article-button button{
+    display: flex;
+    justify-content: center;
     border-radius: 2rem;
     background: white;
-    padding: 0.3rem;
+    padding-top: 0.7rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem; 
     border: 1px solid gray;
     margin-bottom: 1rem;
 }
@@ -489,7 +541,11 @@ details span{
     border-bottom: 1px solid rgb(207, 206, 206);
 }
 .biography-button button{
-    padding:0.5rem;
+    /* padding:0.5rem; */
+    display: flex;
+    padding-top: 0.7rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     background: white;
     border-radius: 2rem;
     border: 1px solid rgb(205, 200, 200);
@@ -536,25 +592,38 @@ details span{
     margin-top: 2rem;
 }
 .stats{
-    padding: 1rem 1rem 1rem 0;
+    /* padding: 0rem 1rem 1rem 0; */
+    width: 25rem;
 }
 .stats h3{
-    padding: 1rem 1rem 1rem 0;
+    /* padding: 1rem; */
     display: flex;
     justify-content: space-between;
+    padding: 1rem 1rem 1rem 0;
 }
-.stats table{
-    padding: 1rem 1rem 1rem 0; 
-    border-collapse: separate;
-    border-spacing: 1rem 2rem; 
-    /* border-bottom: 1px solid rgb(200, 197, 197); */
+.stats table td{
+    border-bottom: 1px solid gray;
+    padding-top: 0.3rem;
+    font-size:0.8rem ;
+
 }
 .stats table th{
-    padding-right: 2rem;
-}
-/* .stats table,tr,th,td{
+    padding: 0.5rem 6.5rem 1rem 0.3rem;
+    color: grey;
     border-bottom: 1px solid gray;
-} */
+    font-size: 1rem;
+
+}
+.stats table p{
+    height: 2rem;
+    color: gray;
+    font-size: 0.8rem;
+    padding-top: 0.3rem;
+}
+.other-searches{
+    /* border-top: 1px solid rgb(210, 208, 208); */
+    padding: 1rem 1rem 1rem 0;
+}
 .other-searches ul{
     display: flex;
     width: 22rem;
